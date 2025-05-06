@@ -11,8 +11,10 @@ var connectionString = builder.Configuration.GetConnectionString("MySQL");
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
 
-    builder.Services.
+builder.Services.
     AddScoped<IUsuarioRepository, UsuarioRepository>();
+    builder.Services.
+    AddScoped<IEventoRepository, EventoRepository>();
     
 // Add services to the container.
 

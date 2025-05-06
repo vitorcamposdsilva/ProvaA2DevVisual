@@ -2,21 +2,22 @@
 
 ### Cadastrar evento
 POST {{url_base}}/cadastrar
+Authorization: Bearer 
 Content-Type: application/json
 
 {
     "email" : "adm",
     "local" : "adm",
-    "data" : "adm",
+    "data" : "2025-02-02",
     "senha" : "123"
 }
 
-### Listar usuários
+### Listar Eventos
 GET {{url_base}}/listar
 Authorization: Bearer
 
 ### Login
-POST {http://localhost:5231/dev/usuario}/login
+POST http://localhost:5231/dev/usuario/login
 Content-Type: application/json
 
 {
