@@ -9,6 +9,7 @@ namespace Dev.Repositories;
 public interface IUsuarioRepository
 {
     void Cadastrar(Usuario usuario);
-    List<Usuario> Listar();
-    Usuario? BuscarUsuarioPorEmailSenha(string email, string senha);
+  List<Usuario> Listar();
+Usuario? BuscarUsuarioPorEmailSenha(string email, string senha);
+
 }

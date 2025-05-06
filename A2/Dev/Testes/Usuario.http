@@ -1,4 +1,4 @@
-@url_base = http://localhost:5268/api/usuario
+@url_base = http://localhost:5231/dev/usuario
 
 ### Cadastrar usuário
 POST {{url_base}}/cadastrar
@@ -20,3 +20,4 @@ Content-Type: application/json
 
 ### Listar usuários
 GET {{url_base}}/listar
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiYWRtIiwiZXhwIjoxNzQ2NDk4NTY0fQ.njaC1M-Mj8XZf1n5QV4n3VnwIhDjjIp5ZGAaIpxC_XA
